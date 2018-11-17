@@ -1,0 +1,37 @@
+@import "src/assets/stylesheets/scss/fuse";
+
+:host {
+    position: relative;
+    display: flex;
+    flex: 0 0 auto;
+    z-index: 4;
+
+    &.below {
+        z-index: 2;
+    }
+
+    .mat-toolbar {
+        background: inherit;
+        color: inherit;
+        position: relative;
+        height: 50px;
+
+        .loading-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        .logo-icon {
+            width: 24px;
+        }
+    }
+
+}

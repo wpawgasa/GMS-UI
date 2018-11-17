@@ -1,1 +1,16 @@
-<router-outlet></router-outlet>
+<div id="app-container">
+        <header role="banner">
+            <app-topbar [ngClass]="appSettings.colorClasses.toolbar"></app-topbar>
+        </header>
+        <main class="content">
+            
+            <mat-sidenav-container>
+
+                <app-content></app-content>
+            </mat-sidenav-container>
+            
+        </main>   
+        <footer>
+            <app-footer [ngClass]="appSettings.colorClasses.footer"></app-footer>
+        </footer>    
+</div>
